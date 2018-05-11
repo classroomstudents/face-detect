@@ -1,0 +1,176 @@
+Microsoft Windows [Version 6.1.7601]
+(c) Корпорация Майкрософт (Microsoft Corp.), 2009. Все права защищены.
+
+C:\Users\s>pip install matplotlib
+Collecting matplotlib
+  Downloading https://files.pythonhosted.org/packages/c6/e0/1f98872856dcbd042220
+a142b5a2b4cb9a8f0efe959ae20f6cb73bd9f3e6/matplotlib-2.2.2-cp36-cp36m-win32.whl (
+8.5MB)
+    100% |████████████████████████████████| 8.5MB 84kB/s
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/6a/8a/718fd7d3458f9fab8e67
+186b00abdd345b639976bc7fb3ae722e1b026a50/pyparsing-2.2.0-py2.py3-none-any.whl (5
+6kB)
+    100% |████████████████████████████████| 61kB 3.9MB/s
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/fd/59/8742e2c77c852e09f0d4
+09af42ccc4165120943ba3b52d57a3ddc56cb0ca/kiwisolver-1.0.1-cp36-none-win32.whl (4
+4kB)
+    100% |████████████████████████████████| 51kB 1.6MB/s
+Requirement already satisfied: numpy>=1.7.1 in c:\users\s\appdata\local\programs
+\python\python36-32\lib\site-packages (from matplotlib)
+Collecting six>=1.10 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa
+78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Requirement already satisfied: pytz in c:\users\s\appdata\local\programs\python\
+python36-32\lib\site-packages (from matplotlib)
+Collecting python-dateutil>=2.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/cf/f5/af2b09c957ace60dcfac
+112b669c45c8c97e32f94aa8b56da4c6d1682825/python_dateutil-2.7.3-py2.py3-none-any.
+whl (211kB)
+    100% |████████████████████████████████| 215kB 909kB/s
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/f7/d2/e07d3ebb2bd7af696440
+ce7e754c59dd546ffe1bbe732c8ab68b9c834e61/cycler-0.10.0-py2.py3-none-any.whl
+Requirement already satisfied: setuptools in c:\users\s\appdata\local\programs\p
+ython\python36-32\lib\site-packages (from kiwisolver>=1.0.1->matplotlib)
+Installing collected packages: pyparsing, kiwisolver, six, python-dateutil, cycl
+er, matplotlib
+Successfully installed cycler-0.10.0 kiwisolver-1.0.1 matplotlib-2.2.2 pyparsing
+-2.2.0 python-dateutil-2.7.3 six-1.11.0
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' comm
+and.
+
+C:\Users\s>pip install C:\Users\s\Downloads\chainer-4.0.0-py3-none-any.whl
+Processing c:\users\s\downloads\chainer-4.0.0-py3-none-any.whl
+Requirement already satisfied: numpy>=1.9.0 in c:\users\s\appdata\local\programs
+\python\python36-32\lib\site-packages (from chainer==4.0.0)
+Collecting cupy==4.0.0 (from chainer==4.0.0)
+  Downloading https://files.pythonhosted.org/packages/38/14/ddb1a13f77a50d721814
+e28181ae90e0d57c3f8d4faa9a7b2e028cfcc99a/cupy-4.0.0.tar.gz (2.0MB)
+    100% |████████████████████████████████| 2.0MB 364kB/s
+    Complete output from command python setup.py egg_info:
+    **************************************************
+    *** WARNING: Cannot find nvToolsExt. nvtx was disabled.
+    **************************************************
+    Options: {'package_name': 'cupy', 'long_description': None, 'wheel_libs': []
+, 'no_rpath': False, 'profile': False, 'linetrace': False, 'annotate': False, 'n
+o_cuda': False}
+    **************************************************
+    *** WARNING: nvcc not in path.
+    *** WARNING: Please set path to nvcc.
+    **************************************************
+    **************************************************
+    *** WARNING: nvcc path != CUDA_PATH
+    *** WARNING: nvcc path: None
+    *** WARNING: CUDA_PATH: C:\NVIDIA\CUDA_5_5
+    **************************************************
+
+    -------- Configuring Module: cuda --------
+    Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Bui
+ld Tools": http://landinghub.visualstudio.com/visual-cpp-build-tools
+
+    ************************************************************
+    * CuPy Configuration Summary                               *
+    ************************************************************
+
+    Build Environment:
+      Include directories: ['C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\
+include']
+      Library directories: ['C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\
+lib\\x64']
+      nvcc command       : (not found)
+
+    Environment Variables:
+      CFLAGS          : (none)
+      LDFLAGS         : (none)
+      LIBRARY_PATH    : (none)
+      CUDA_PATH       : C:\NVIDIA\CUDA_5_5
+      NVCC            : (none)
+
+    Modules:
+      cuda      : No
+        -> Include files not found: ['cublas_v2.h', 'cuda.h', 'cuda_profiler_api
+.h', 'cuda_runtime.h', 'cufft.h', 'curand.h', 'cusparse.h', 'nvrtc.h']
+        -> Check your CFLAGS environment variable.
+
+    ERROR: CUDA could not be found on your system.
+    Please refer to the Installation Guide for details:
+    https://docs-cupy.chainer.org/en/stable/install.html
+
+    ************************************************************
+
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "C:\Users\s\AppData\Local\Temp\pip-build-09c2zu4y\cupy\setup.py", lin
+e 65, in <module>
+        ext_modules = cupy_setup_build.get_ext_modules()
+      File "C:\Users\s\AppData\Local\Temp\pip-build-09c2zu4y\cupy\cupy_setup_bui
+ld.py", line 561, in get_ext_modules
+        extensions = make_extensions(arg_options, compiler, use_cython)
+      File "C:\Users\s\AppData\Local\Temp\pip-build-09c2zu4y\cupy\cupy_setup_bui
+ld.py", line 374, in make_extensions
+        raise Exception('Your CUDA environment is invalid. '
+    Exception: Your CUDA environment is invalid. Please check above error log.
+
+    ----------------------------------------
+Command "python setup.py egg_info" failed with error code 1 in C:\Users\s\AppDat
+a\Local\Temp\pip-build-09c2zu4y\cupy\
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' comm
+and.
+
+C:\Users\s>pip install chainer
+Collecting chainer
+  Downloading https://files.pythonhosted.org/packages/2e/7b/e392b26b0bd36253bd9b
+5c16cc5471daea197e7255d97fa68d6960385e98/chainer-4.0.0.tar.gz (393kB)
+    100% |████████████████████████████████| 399kB 1.5MB/s
+Collecting filelock (from chainer)
+  Downloading https://files.pythonhosted.org/packages/2d/ba/db7e0717368958827fa9
+7af0b8acafd983ac3a6ecd679f60f3ccd6e5b16e/filelock-3.0.4.tar.gz
+Requirement already satisfied: numpy>=1.9.0 in c:\users\s\appdata\local\programs
+\python\python36-32\lib\site-packages (from chainer)
+Collecting protobuf>=3.0.0 (from chainer)
+  Downloading https://files.pythonhosted.org/packages/aa/f6/d685daccb61dbd3336fe
+8fec233ad5ac39d9e4fb9d28f31a7d8150f67e21/protobuf-3.5.2.post1-cp36-cp36m-win32.w
+hl (854kB)
+    100% |████████████████████████████████| 860kB 721kB/s
+Requirement already satisfied: six>=1.9.0 in c:\users\s\appdata\local\programs\p
+ython\python36-32\lib\site-packages (from chainer)
+Requirement already satisfied: setuptools in c:\users\s\appdata\local\programs\p
+ython\python36-32\lib\site-packages (from protobuf>=3.0.0->chainer)
+Installing collected packages: filelock, protobuf, chainer
+  Running setup.py install for filelock ... done
+  Running setup.py install for chainer ... done
+Successfully installed chainer-4.0.0 filelock-3.0.4 protobuf-3.5.2.post1
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' comm
+and.
+
+C:\Users\s>pip install scikit-learn
+Collecting scikit-learn
+  Downloading https://files.pythonhosted.org/packages/87/b7/0e7f5c0cf765cf4e1924
+c068e7b2e1708c93ebffde9302a57ea8f26619e9/scikit_learn-0.19.1-cp36-cp36m-win32.wh
+l (3.9MB)
+    100% |████████████████████████████████| 3.9MB 115kB/s
+Installing collected packages: scikit-learn
+Successfully installed scikit-learn-0.19.1
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' comm
+and.
+
+C:\Users\s>pip install pandas
+Collecting pandas
+
+
+
+
+
+
+
+
+
+
+
+
